@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html lang="en-US">
+  <head>
+    <title>Donate</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="http://www.browndailyherald.com/wp-content/uploads/2012/11/favicon.jpg" type="image/x-icon">
+    <style>
+        .icon {
+          height: 35px;
+          margin: -10px; !important
+        }
+        .navbar-center
+        {
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: 0;
+            text-align: center;
+            float: none;
+            margin: 0 auto;
+          width: 100%;
+          line-height: 30px;
+        }
+        .content {
+          /*text-align: center;*/
+          margin: 10px;
+        }
+        td {
+          padding: 5px;
+          max-width: 400px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://browndailyherald.com"><img class="icon" src="http://localhost:8000/img/flag.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a href="http://localhost:8000/updates/Dec2015.html">Updates on The Herald</a></li>
+            <li class="active"><a href="/donate/">Donate</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Initaitives<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://localhost:8000/initiatives/finaid.html">Finanical Aid</a></li>
+                <li><a href="http://localhost:8000/initiatives/digitization.html">Digitization</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <p>The Brown Daily Herald, Inc. is a 501(c)(3) nonprofit organization registered in the state of Rhode Island. <b>All gifts to The Brown Daily Herald are tax deductible</b>. If you have any questions, please email alumni@browndailyherald.com.</p>
+    </div>
+    <div class="content">  
+      <form>
+        <div class="col-md-6">
+          <table>
+            <tr>
+              <td><h3>Amount</h3></td>
+              <td><input type="radio" name="amount" value="25"> $25<br>
+              <input type="radio" name="amount" value="50"> $50<br>
+              <input type="radio" name="amount" value="100"> $100<br>
+              <input type="radio" name="amount" value="200" checked> $200<br>
+              <input type="radio" name="amount" value="500"> $500<br>
+              <input type="radio" name="amount" value="other"> Other <input type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>First Name</h3></td>
+              <td><input name="first_name" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>Last Name</h3></td>
+              <td><input name="last_name" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>Address</h3></td>
+              <td><input name="address_l1" type="text"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input name="address_l2" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>City</h3></td>
+              <td><input name="city" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>State</h3></td>
+              <td><input name="state" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>Zip Code</h3></td>
+              <td><input name="zip" type="text"></td>
+            </tr>
+          </table>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <table>
+            <tr>
+              <td><h3>Email</h3></td>
+              <td><input name="email" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>Phone</h3></td>
+              <td><input name="phone" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>Graduation Year</h3></td>
+              <td><input name="grad_year" type="text"></td>
+            </tr>
+            <tr>
+              <td><h3>What was the last position you held at The Herald?</h3></td>
+              <td><input type="checkbox" name="position" value="ed_staff"> Editorial staff <br>
+                  <input type="checkbox" name="position" value="biz_staff"> Business staff <br>
+                  <input type="checkbox" name="position" value="prod_staff"> Production/Design staff<br>
+                  <input type="checkbox" name="position" value="ed_board"> Editorial Board<br>
+                  <input type="checkbox" name="position" value="eic"> Editor-in-Chief<br>
+                  <input type="checkbox" name="position" value="gm"> General/Business Manager</td>
+            </tr>
+          </table>
+          <div style="text-align: center;">
+            <input class="btn btn-primary" type="submit" value="Donate!" style="text-align: center;">
+          </div>
+        </div>
+          
+          
+      </form>
+    </div>
+  </body>
+</html>
